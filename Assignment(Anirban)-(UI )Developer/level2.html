@@ -1,0 +1,42 @@
+<html ng-app="secondapp">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="level2.js"></script>
+</head>
+<body>
+      <h4>Level 2  and Level 3 (NT-Vegetables-NT)</h4>
+      <div  ng-controller="secondCTRL">
+        <li ng-click="Show()"><i class="glyphicon glyphicon-folder-open"></i> Crop Commodities
+        <ul ng-show="IsShow">
+          <li><i class="glyphicon glyphicon-folder-open"></i> BT</li>
+          <li ng-click="ShowHide()"><i class="glyphicon glyphicon-folder-open"></i> NT
+             <ul ng-show="IsVisible" ng-repeat="second in secondata">
+                     <li><i class="glyphicon glyphicon-folder-open"></i> {{second.name}}</li>
+             </ul>
+             <ul>
+                  <li ng-click="Showit()"><i class="glyphicon glyphicon-folder-open"></i> Vegetables
+                    <ul  ng-show="Isee">
+                       <li><i class="glyphicon glyphicon-folder-open"></i> BT</li>
+                       <li><i class="glyphicon glyphicon-folder-open"></i> RT</li>
+                       <li ng-click="Showthirdlevel()"><i class="glyphicon glyphicon-folder-open"></i> NT
+                           <ul ng-show="thirdlevel" ng-repeat="third in thirdata">
+                              <li> <i class="glyphicon glyphicon-folder-open"></i> {{third.name}}</li>
+                           </ul>
+                       </li>
+                       <li><i class="glyphicon glyphicon-folder-open"></i> UF</li>
+                    </ul>
+                </li>
+             </ul>
+          </li>
+          <li><i class="glyphicon glyphicon-folder-open"></i> UF</li>
+          <li><i class="glyphicon glyphicon-folder-open"></i> USE</li>
+         </ul>
+       </li>
+     </div>
+</body>
+</html>

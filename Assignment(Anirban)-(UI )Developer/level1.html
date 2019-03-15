@@ -1,0 +1,28 @@
+<html ng-app="firstapp">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="level1.js"></script>
+</head>
+<body>
+      <h4>Level 1(First click Crop Commodities and then click on NT it will show you result)</h4>
+      <div  ng-controller="firstCTRL">
+        <li ng-click="Show()"><i class="glyphicon glyphicon-folder-open"></i> Crop Commodities
+        <ul ng-show="IsShow">
+          <li><i class="glyphicon glyphicon-folder-open"></i> BT</li>
+          <li ng-click="ShowHide()"><i class="glyphicon glyphicon-folder-open"></i> NT
+             <ul ng-show="IsVisible" ng-repeat="sub in subdatas">
+                <li><i class="glyphicon glyphicon-folder-open"></i> {{sub.name}}</li>
+             </ul>
+          </li>
+          <li><i class="glyphicon glyphicon-folder-open"></i> UF</li>
+          <li><i class="glyphicon glyphicon-folder-open"></i> USE</li>
+        </ul>
+     </div>
+</body>
+</html>
