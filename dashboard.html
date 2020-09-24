@@ -1,0 +1,151 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"  href="dashboard.css">
+    <script src="dashboard.js"></script>
+</head>
+<body>
+ <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div  class="col-sm-3">
+            <img id="image-demo" class="img-responsive" src="login-images/Rishta-Dobara-Final-Logo_edited.webp">
+
+          </div>
+          <div  class="col-sm-9">
+            <div class="col-sm-9">
+            </div>
+            <div class="col-sm-3">
+                   <br>
+                   <img src="login-images/user.jpg"  class="img-circle" id="user-demo"> &nbsp <i class="fa fas fa-caret-down"></i>
+            </div>
+         </div>
+       </div>
+   </nav>
+   <div class="col-sm-12">
+   
+      <div id="mySidenav" class="sidenav">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <a href="#"><p class="left">Dashboard</p></a>
+         <a href="#"><p class="left">User Management</p></a>
+    </div>
+     <span id="left-action" onclick="openNav()">&#9776; Left navigation</span> 
+      <div class="col-sm-8">
+          <h2 class="dash-heading">Dashboard</h2>
+          <h4 class="dash-heading1">Summary</h4>
+          <div  class="container">
+                <div  class="col-sm-3" id="Summ">
+                      <p id="num">120</p>
+                      
+                      <p id="pnum">COMPLETE <br> PROFILE COUNT</p>
+                </div>
+                <div  class="col-sm-3" id="Summ">
+                    <p id="num1">20</p>
+                    
+                    <p id="pnum">INCOMPLETE <br> PROFILE COUNT</p>
+                </div>
+                <div  class="col-sm-3" id="Summ">
+                    <p id="num2">100</p>
+                    
+                    <p id="pnum">FREE <br> VERSION COUNT</p>
+                </div>
+                <div  class="col-sm-3" id="Summ">
+                    <p id="num3">40</p>
+                    
+                    <p id="pnum">PAID <br> VERSION COUNT</p>
+                </div>
+          </div>
+          <h4 class="dash-heading1">Profiles</h4>   
+          <div  class="container" id="profiles">
+            <br>
+            <div class="col-sm-5">
+              
+                 <input type="text" class="form-control" placeholder="search"> 
+            
+            </div>  
+            <div class="col-sm-7">
+            <div  class="col-sm-6">
+            </div>
+             <div  class="col-sm-6">
+                <div class="form-group">
+                    <input type="submit"  value="Filters" class="btn btn-success">
+                </div>
+                
+            </div>
+  
+           </div> 
+          
+           <table class="table">
+            <thead>
+              <tr>
+                <th>System Generated ID</th>
+                <th>Name</th>
+                <th>Mobile Number</th>
+                <th>Age</th>
+                <th>Religion</th>
+                <th>Caste</th>
+                <th>Location</th>
+                <th>Maritial Status</th>
+                <th>Income</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>RD 1223</td>
+                <td><img src="login-images/user.jpg"  class="img-circle" id="user-demo"> Prashant Joshi</td>
+                <td>90909009</td>
+                <td>34</td>
+                <td>Hindu</td>
+                <td>Brahmin</td>
+                <td>Pune</td>
+                <td>Divorced</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>RD 2378</td>
+                <td><img src="login-images/user.jpg"  class="img-circle" id="user-demo"> Amita Jain</td>
+                <td>6767678789</td>
+                <td>40</td>
+                <td>Jain</td>
+                <td>Jain</td>
+                <td>Mumbai</td>
+                <td>Windower</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>RD 3456</td>
+                <td><img src="login-images/user.jpg"  class="img-circle" id="user-demo"> Merlin Alias</td>
+                <td>90909009</td>
+                <td>34</td>
+                <td>Hindu</td>
+                <td>Brahmin</td>
+                <td>Pune</td>
+                <td>Divorced</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>RD 2354</td>
+                <td><img src="login-images/user.jpg"  class="img-circle" id="user-demo"> Prashant Joshi</td>
+                <td>90909009</td>
+                <td>34</td>
+                <td>Hindu</td>
+                <td>Brahmin</td>
+                <td>Pune</td>
+                <td>Divorced</td>
+                <td>50,000</td>
+              </tr>
+            </tbody>
+          </table>
+         
+          </div>
+         
+      </div>
+  
+ </div>
+
+</body>
+</html>
