@@ -134,10 +134,18 @@ thead{
     height:20xp;
     width:20px;
 }
-.footer {
-        background-color: #312b6b;
-        color: white;
-        padding: 15px;
+footer {
+    height:100px;
+    border:1px solid #312b6b;
+ 
+    
+    background-color:#312b6b;
+
+    color: white;
+    padding: 15px;
+  }
+.footer-para{
+    font-size:20px;
 }
 
   
